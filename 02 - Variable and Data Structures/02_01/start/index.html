@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ECMAScript</title>
+<style>
+  /*Aqui ajusto a posição dos quadrados */#box {display: flex;justify-content: space-between; }
+  /*Aqui adiciono cor e forma aos quadrados */#box > div{background-color: rgb(182, 17, 171);height: 5em;width: 5em;}
+</style>  
+
+
+</head>
+<body>
+  <h1>Let</h1>
+  <div id="box"> </div> 
+  <script type="text/javascript">
+    var div;
+    var box = document.getElementById("box");
+
+      for (let  i=0; i<5; i++) {
+          div = document.createElement("div");
+          div.onclick = function(){
+            alert("This is box # "+i);
+          }
+          box.appendChild(div);
+      }
+
+  </script>
+</body>
+</html>
+  
+  
+  
